@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Title Page</title>
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="asset/bootstrap.min.css">
+		<link rel="stylesheet" href="asset/style.css">
+	</head>
+	<body>
+		<h1 class="text-center">First Try</h1>
+			<div class="container">
+				<div class="row selection">
+						<select class="c-select classes form-control" multiple>
+							<option disabled="disabled">Select your classes that you have</option>
+							<option value="One">One</option>
+							<option value="Two">Two</option>
+							<option value="Three">Three</option>
+							<option value="Four">Four</option>
+							<option value="Five">Five</option>
+							<option value="Six">Six</option>
+						</select>
+						<div id="subClass"></div>
+						<input class="form-control mb-2 timesinday" type="number" placeholder="How many times do you have each day?" />
+						<input class="form-control mb-2 teachers" type="number" placeholder="Enter number of teachers" />
+						<input class="form-control mb-2 subjects" type="number" placeholder="Enter number of subjects" />
+						<button type="button" id="create" class="create btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">Create</button>
+				</div>
+				<div class="row creation">
+					<div class="table-responsive">
+					<table border="2px" class="table table-hover">
+							  <caption>
+							    Poster availability
+							  </caption>
+							  <col>
+							  <col>
+<!-- 							  <colgroup span="3"></colgroup>
+							  <colgroup span="2"></colgroup>
+ -->							  <thead>
+							  	<tr id="totalClassLevelName">
+								    <th colspan="2" scope="colgroup"></th>
+								  </tr>
+							    <tr id="subClassEachClassName">
+							      <th scope="col">Days</th>
+							      <th scope="col">Time</th>
+							    </tr>
+							  </thead>
+							  <tbody>
+							  </tbody>
+							</table>
+						</div>
+				</div>
+			</div>
+		<!-- jQuery -->
+		<script src="asset/jquery-3.3.1.min.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="asset/bootstrap.min.js"></script>
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+ 		<script>
+ 			jQuery(document).ready(function($) {
+ 				$('th[scope="rowgroup"]').each(function(index, el) {
+ 					$(this).parent('tr').addClass($(this).html());
+ 				});
+ 			});
+ 		</script>
+ 		<script src="asset/my.js" ></script>
+	</body>
+</html>
