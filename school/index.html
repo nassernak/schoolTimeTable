@@ -6,13 +6,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Title Page</title>
 		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="asset/bootstrap.min.css">
-		<link rel="stylesheet" href="asset/style.css">
+		<link rel="stylesheet" href="asset/css/bootstrap.min.css">
+		<link rel="stylesheet" href="asset/css/all.css">
+		<link rel="stylesheet" href="asset/css/style.css">
 	</head>
 	<body>
 		<h1 class="text-center">First Try</h1>
 			<div class="container">
-				<div class="row selection">
+				<form action="" method="POST">
+					<div class="row selection">
 					<label title="Press CTRL and then select your classes level">Select your classes that you have</label>
 						<select class="c-select classes col-lg-4 col-md-5 col-sm-6 col-xs-12" multiple title="Press CTRL and then select your classes level">
 							<!-- <option disabled="disabled">Select your classes that you have</option> -->
@@ -45,8 +47,9 @@
 								<input class="form-control mb-2 subjects" name="subjects" type="number" />
 							</div>
 						</div>
-						<button type="button" id="create" class="create btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">Create</button>
+						<button type="submit" id="create" class="create btn btn-primary" >Create</button>
 				</div>
+				</form>
 				<div class="row creation">
 					<div class="table-responsive">
 					<table border="2px" class="table table-hover hidden main-table">
@@ -55,9 +58,9 @@
 							  </caption>
 							  <col>
 							  <col>
-<!-- 							  <colgroup span="3"></colgroup>
+							  <colgroup span="3"></colgroup>
 							  <colgroup span="2"></colgroup>
- -->							  <thead>
+							  <thead>
 							  	<tr id="totalClassLevelName">
 								    <th colspan="2" scope="colgroup"></th>
 								  </tr>
@@ -72,10 +75,12 @@
 						</div>
 				</div>
 			</div>
+ 		<div id="loading" class="hidden">	
+ 		</div>
 		<!-- jQuery -->
-		<script src="asset/jquery-3.3.1.min.js"></script>
+		<script src="asset/js/jquery-3.3.1.min.js"></script>
 		<!-- Bootstrap JavaScript -->
-		<script src="asset/bootstrap.min.js"></script>
+		<script src="asset/js/bootstrap.min.js"></script>
 		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
  		<script>
  			jQuery(document).ready(function($) {
@@ -84,6 +89,6 @@
  				});
  			});
  		</script>
- 		<script src="asset/my.js" ></script>
+ 		<script src="asset/js/my.js" ></script>
 	</body>
 </html>
