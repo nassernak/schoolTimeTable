@@ -13,26 +13,45 @@
 		<h1 class="text-center">First Try</h1>
 			<div class="container">
 				<div class="row selection">
-						<select class="c-select classes form-control" multiple>
-							<option disabled="disabled">Select your classes that you have</option>
+					<label title="Press CTRL and then select your classes level">Select your classes that you have</label>
+						<select class="c-select classes col-lg-4 col-md-5 col-sm-6 col-xs-12" multiple title="Press CTRL and then select your classes level">
+							<!-- <option disabled="disabled">Select your classes that you have</option> -->
 							<option value="One">One</option>
 							<option value="Two">Two</option>
 							<option value="Three">Three</option>
 							<option value="Four">Four</option>
 							<option value="Five">Five</option>
 							<option value="Six">Six</option>
+							<option value="Seven">Seven</option>
+							<option value="Eight">Eight</option>
+							<option value="Nine">Nine</option>
+							<option value="Ten">Ten</option>
+							<option value="Eleven">Eleven</option>
+							<option value="Towelve">Towelve</option>
 						</select>
-						<div id="subClass"></div>
-						<input class="form-control mb-2 timesinday" type="number" placeholder="How many times do you have each day?" />
-						<input class="form-control mb-2 teachers" type="number" placeholder="Enter number of teachers" />
-						<input class="form-control mb-2 subjects" type="number" placeholder="Enter number of subjects" />
+						<div id="subClass" class="row"></div>
+						<hr>
+						<div class="row">
+							<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<label for="timesinday">How many times do you have each day?</label>
+								<input class="form-control mb-2 timesinday" name="timesinday" type="number" />
+							</div>
+							<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<label for="teachers">Enter number of teachers</label>
+								<input class="form-control mb-2 teachers" name="teachers" type="number" />
+							</div>
+							<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<label for="subjects">Enter number of subjects</label>
+								<input class="form-control mb-2 subjects" name="subjects" type="number" />
+							</div>
+						</div>
 						<button type="button" id="create" class="create btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">Create</button>
 				</div>
 				<div class="row creation">
 					<div class="table-responsive">
-					<table border="2px" class="table table-hover">
+					<table border="2px" class="table table-hover hidden main-table">
 							  <caption>
-							    Poster availability
+							    Your School Time Table
 							  </caption>
 							  <col>
 							  <col>
